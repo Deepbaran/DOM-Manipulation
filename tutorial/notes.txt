@@ -1,0 +1,63 @@
+=> DOM:
+**********
+- DOM - Document Object Model
+- Created by the browser when a web page is loaded
+- In graphical form, it looks kike a tree of elements / nodes
+- Programatically, we can use JS to read or change the DOM
+
+            body <-- root element of the DOM
+            / \
+          h1    nav
+                / \
+              ul    h2
+              / \
+            li    li
+
+
+**********
+=> Interacting with the DOM:
+**********
+- Change / Remove HTML elements in the DOM / on the page
+- Change & add CSS styles to elements
+- Read & change element attributes (href, src, alt, custom)
+- Create new HTML elements and insert them into the DOM / the page
+- Attach event listeners to elements (click, keypress, submit)
+
+**********
+=> DOM Nodes:
+**********
+- Everything in HTML are Nodes
+- HTML tags, texts, attributes, comments everything is a node
+- Each node types have different numbers [1->Element; 2->Attribute value; for more go to: 'https://www.w3schools.com/jsref/prop_node_nodetype.asp']
+
+**********
+=> Event Listeners:
+**********
+- Event Listeners are functions that we attach to HTML elements that are executed upon certain actions performed on that element.
+
+**********
+=> Event Bubbling:
+**********
+The bubbles event property returns a Boolean value that indicates whether or not an event is a bubbling event.
+Event bubbling directs an event to its intended target, it works like this:
+- A button is clicked nad the event is directed to the button.
+- If an event handler is set for that object, the event is triggered.
+- If no event is set for the object, the event bubbles up (like a bubble in water) to the objects parent.
+
+**********
+=> Key of Event:
+**********
+- It is a event that occurs when a key is pressed and then released.
+
+**********
+=> Reason for putting script tag at the end of the body:
+**********
+- If we add the script tag at the top of the body, then by the tie the script tag will run, none of the DOM elements will be loaded and all the event listeners, styles, etc stated in the script will not be added to their corresponding elements. So, script tag is put at the end of the body, so that it will run after all the DOM elements are successfully rendered.
+
+**********
+=> DOMContentLoaded Event:
+**********
+- If the script is at the top of the body or in the headm then we can use the DOMContentLoaded Event.
+- This tells the script to run the script when the document/DOM is ready and everything is ready to manipulated.
+- This event will be fired once the DOM is ready to manipulated.
+- This works even if the script tag is at the end of the body tag.
